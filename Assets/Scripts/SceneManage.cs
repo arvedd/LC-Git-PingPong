@@ -9,7 +9,7 @@ public class SceneManage : MonoBehaviour
     }
 
     public void QuitApp() {
-
+        
         Application.Quit();
     }
 }
