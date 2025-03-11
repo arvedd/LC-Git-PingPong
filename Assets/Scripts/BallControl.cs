@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class BallControl : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    public AudioSource audioPlayer;
 
     void Start() {
         
@@ -48,16 +49,19 @@ public class BallControl : MonoBehaviour
     {
          if(collision.gameObject.name == "Player") {
 
+            audioPlayer.Play();
             rb2d.AddForce(new Vector2(20, -15));
             wallCollision = 0;
 
         }else if(collision.gameObject.name == "Enemy") {
 
+            audioPlayer.Play();
             rb2d.AddForce(new Vector2(-20, -15));
             wallCollision = 0;
 
         }else {
 
+            audioPlayer.Play();
             wallCollision = wallCollision + 1;
             Debug.Log("Wall Collision = " + wallCollision);
             
