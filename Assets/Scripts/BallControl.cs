@@ -6,11 +6,14 @@ public class BallControl : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     public AudioSource audioPlayer;
+    Animator animator;
 
     void Start() {
         
         rb2d = GetComponent<Rigidbody2D>();
         Invoke("GoBall", 2);
+
+        animator = GetComponent<Animator>();
     }
 
     void GoBall() {
@@ -30,17 +33,8 @@ public class BallControl : MonoBehaviour
 
 
     void ResetBall() {
-
         rb2d.linearVelocity = Vector2.zero;
         transform.position = Vector2.zero;
-    }
-
-    void RestartGame() {
-
-        ResetBall();
-        wallCollision = 0;
-        Invoke("GoBall", 1);
-
     }
 
     [SerializeField] private int wallCollision;
@@ -59,7 +53,7 @@ public class BallControl : MonoBehaviour
             rb2d.AddForce(new Vector2(-20, -15));
             wallCollision = 0;
 
-        }else {
+        } else {
 
             audioPlayer.Play();
             wallCollision = wallCollision + 1;
@@ -71,6 +65,18 @@ public class BallControl : MonoBehaviour
             }
         }
     }
-       
 
-    }
+    private IEnumerator ExplodeAndReset() {
+    
+    animator.SetTrigger("IsExplode");
+
+    yield return new WaitForSeconds(0.10f);
+
+    ResetBall();
+    animator.SetTrigger("IsIdle");
+    wallCollision = 0;
+    Invoke("GoBall", 1);
+
+}
+
+}
