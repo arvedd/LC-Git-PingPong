@@ -41,6 +41,6 @@ This project focuses on simulating the flow of customers and burger-making gamep
 
 ## Project Goal
 
-This game was created as a **learning project** to experiment with Unity's **Scriptable Objects**, **game state flow**, and **customer-based interaction systems**. It also served as a practice in organizing scalable game logic for future management/restaurant-style games.
+This game was created as a **learning project** to experiment with Unity.
 
 ---
