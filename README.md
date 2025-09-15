@@ -4,7 +4,7 @@
 
 ---
 
-## Features & Scripts 🔧 
+## Features & Scripts 
 
 This project focuses on simulating the flow of customers and burger-making gameplay. Below are the core systems that define the game’s behavior:
 
