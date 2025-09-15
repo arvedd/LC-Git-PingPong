@@ -1,2 +1,2 @@
 # LC-Git-PingPong
- Ping Pong Game
+SpacePong is a 2D arcade game inspired by the classic Pong. In this game, players control paddles to deflect a meteor ball and prevent it from crossing their defense line. Each time the meteor successfully passes through the opponent’s defense, the player scores a point. The match continues until one of the players reaches a certain score (e.g., 10), and that player is declared the winner.
