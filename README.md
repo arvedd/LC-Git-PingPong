@@ -9,7 +9,7 @@ The game was built using Unity Engine. Play the game from -.
 <br>
 
 ## Developer
-- Ngakan Nyoman Arya Vedantha (Game Programmer)
+Ngakan Nyoman Arya Vedantha (Game Programmer)
 <br>
 
 ## Built Time
@@ -48,6 +48,16 @@ The game was built for 5 days.
 
 ---
 
+## Game controls
+
+The following controls are bound in-game, for gameplay and testing.
+
+| Key Binding       | Function          |
+| ----------------- | ----------------- |
+| W,A,S,D           | Player 1 movement |
+| Arrow Keys           | Player 2 movement |
+
+<br>
 
 ## Project Goal
 
