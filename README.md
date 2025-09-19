@@ -7,9 +7,11 @@
 ## Play Game
 The game was built using Unity Engine. Play the game from -. 
 <br>
+
 ## Developer
 - Ngakan Nyoman Arya Vedantha (Game Programmer)
 <br>
+
 ## Built Time
 The game was built for 5 days.
 <br>
