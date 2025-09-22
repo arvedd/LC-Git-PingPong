@@ -47,19 +47,13 @@ The game was built for 5 days.
 ## 📂Files description
 
 ```
-├── SpacePong                     # Contain everything needed for SpacePong to works.
-   ├── .vscode                        # Contains configuration files for Visual Studio Code (VSCode) when it's used as the code editor for the project.
-      ├── extensions.json             # Contains settings and configurations for debugging, code formatting, and IntelliSense. This folder is related to Visual Studio Code integration.
-      ├── launch.json                 # Contains the configuration necessary to start debugging Unity C# scripts within VSCode.                     
-      ├── setting.json                # Contains workspace-specific settings for VSCode that are applied when working within the Unity project.
+├── SpacePong                         # Contain everything needed for SpacePong to works.
    ├── Assets                         # Contains every assets that have been worked with unity to create the game like the scripts and the art.
-      ├── Art                         # Contains all the game art like the sprites, background, even the character.
-      ├── Game Animation              # Contains every animation clip and animator controller that played when the game start.
-      ├── Game Musics                 # Contains every sound used for the game like music and sound effects.
-      ├── Game Scripts                # Contains all scripts needed to make the gane get goings like PlayerMovement scripts.
-      ├── Prefabs                     # Contains every pre-configured, reusable game object that you can instantiate (create copies of) in your game scene.
-      ├── Scenes                      # Contains all scenes that exist in the game for it to interconnected with each other like MainMenu, Gameplay, etc
-      ├── ThirdParty Packages         # Contains the Package Manager from unity registry or unity asset store assets for game purposes.
+      ├── Sprites                     # Contains all the game art like the sprites, background, even the character.
+      ├── Fonts                       # Contains every font that have been used in the game.
+      ├── Sounds                      # Contains every sound used for the game like music and sound effects.
+      ├── Scripts                     # Contains all scripts needed to make the gane get goings like PlayerMovement scripts.
+      ├── Scenes                      # Contains all scenes that exist in the game for it to interconnected with each other like MainMenu, Gameplay.
    ├── Packages                       # Contains game packages that responsible for managing external libraries and packages used in your project.
       ├── Manifest.json               # Contains the lists of all the packages that your project depends on and their versions.
       ├── Packages-lock.json          # Contains packages that ensuring your project always uses the same versions of all dependencies and their sub-dependencies.
