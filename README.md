@@ -44,7 +44,7 @@ The game was built for 5 days.
 
 ---
 
-## 📂Files description
+## Files description
 
 ```
 ├── SpacePong                         # Contain everything needed for SpacePong to works.
